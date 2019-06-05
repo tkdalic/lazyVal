@@ -1,12 +1,9 @@
-import { describe, it } from "mocha";
+import { describe, it, Test } from "mocha";
 import { lazyVal } from "../src/lazyval";
 import { assert } from "chai";
 
 class TestFunctions {
     constructor() { }
-    @lazyVal() async sleep(): Promise<void> {
-        return new Promise<void>((resolve, reject) => setTimeout(() => resolve(), 10000));
-    }
     @lazyVal() hello(): string {
         return 'hello';
     }
@@ -47,4 +44,4 @@ describe('test lazy-val:', () => {
     it('返り値がランダムの関数', () => {
         assert.equal(testFunctions.date(), date);
     });
-})
+});

@@ -1,14 +1,11 @@
 {
-  "name": "lazy-val",
-  "version": "0.1.0",
+  "name": "node-lazy-val",
+  "version": "1.0.0",
   "description": "provide features like scala's lazyval",
-  "main": "dist/src/lazyval.ts",
-  "types": "dist/src/lazyval.d.ts",
-  "directories": {
-    "prepare": "tsc",
-    "test": "test"
-  },
+  "main": "./dist/src/lazyval.js",
+  "types": "./dist/src/lazyval.d.ts",
   "scripts": {
+    "prepare": "tsc",
     "test": "mocha -r ts-node/register tests/**/*.test.ts"
   },
   "author": "tukumo",
@@ -18,7 +15,7 @@
     "lazy val"
   ],
   "files": [
-    "dist"
+    "dist/src"
   ],
   "devDependencies": {
     "@types/chai": "^4.1.7",

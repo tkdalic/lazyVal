@@ -1,3 +1,9 @@
+/**
+ * lazy val
+ *
+ * @export
+ * @returns {*}
+ */
 export function lazyVal(): any {
     return function (target: any, propertyKey: string, descriptor: PropertyDescriptor): any {
         // console.log(target);
