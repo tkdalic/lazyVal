@@ -1,23 +1,23 @@
 import { describe, it, Test } from "mocha";
-import { lazyVal } from "../src/lazyval";
+import { lazy } from "../src/lazyval";
 import { assert } from "chai";
 
 class TestFunctions {
     constructor() { }
-    @lazyVal() hello(): string {
+    @lazy hello(): string {
         return 'hello';
     }
-    @lazyVal() date(): Date {
+    @lazy date(): Date {
         return new Date();
     }
-    @lazyVal() echo(s: string): string {
+    @lazy echo(s: string): string {
         return s;
     }
-    @lazyVal() add(a: number, b: number): number {
+    @lazy add(a: number, b: number): number {
         return a + b;
     }
 
-    @lazyVal() join(...args: string[]): string {
+    @lazy join(...args: string[]): string {
         return args.join('.');
     }
 
