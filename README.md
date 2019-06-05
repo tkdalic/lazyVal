@@ -9,10 +9,10 @@ node で scala の lazy val を再現しました｡
 ## 実装例
 
 ```typescript
-import { lazyVal } from "node-lazy-val";
+import { lazy } from "lazy-decorator";
 
 class Foo {
-  @lazyVal() public random() {
+  @lazy public random() {
     return Math.round(Math.random() * 100);
   }
 }
