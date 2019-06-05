@@ -1,6 +1,6 @@
 {
   "name": "lazy-decorator",
-  "version": "1.0.",
+  "version": "1.0.1",
   "description": "provide features like scala's lazyval",
   "main": "./dist/src/lazyval.js",
   "types": "./dist/src/lazyval.d.ts",
