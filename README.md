@@ -1,4 +1,4 @@
-# node lazy val
+# lazy decorator
 
 ## 概要
 
