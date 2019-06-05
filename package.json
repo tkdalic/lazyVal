@@ -4,7 +4,7 @@
   "description": "provide features like scala's lazyval",
   "main": "src/lazyval.ts",
   "directories": {
-    "preinstall": "tsc",
+    "prepare": "tsc",
     "test": "test"
   },
   "scripts": {
@@ -17,7 +17,7 @@
     "lazy val"
   ],
   "files": [
-    "src"
+    "dist"
   ],
   "devDependencies": {
     "@types/chai": "^4.1.7",
