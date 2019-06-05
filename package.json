@@ -4,6 +4,7 @@
   "description": "provide features like scala's lazyval",
   "main": "src/lazyval.ts",
   "directories": {
+    "preinstall": "tsc",
     "test": "test"
   },
   "scripts": {
