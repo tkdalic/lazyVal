@@ -1,8 +1,9 @@
 {
   "name": "lazy-val",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "provide features like scala's lazyval",
-  "main": "src/lazyval.ts",
+  "main": "dist/src/lazyval.ts",
+  "types": "dist/src/lazyval.d.ts",
   "directories": {
     "prepare": "tsc",
     "test": "test"
